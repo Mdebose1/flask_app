@@ -1,0 +1,44 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-12">
+        <form>
+            <div class="row">
+                <div class="col-10">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="blog_post" id="blog_post" aria-describedby="helpId" placeholder="Tell Us Your Thoughts">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <button class="btn btn-info btn-block" type="button">
+                    Post    
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<hr />
+<div class="row">
+    <div class="col-12">
+        <ul class="list-group">
+            {% for post in posts %}
+                <li class="list-group-item mb-4">
+                    {{ post.body }}
+                    <div>
+                        <small>
+                            &mdash;  {{ post.author.first_name }} {{ post.author.last_name }} 
+                            <span class="float-right">
+                                {{ moment(post.date_created).fromNow() }}
+                            </span>
+                        </small>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+{% endblock content %}

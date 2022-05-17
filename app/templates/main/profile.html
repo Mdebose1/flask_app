@@ -1,0 +1,118 @@
+{% extends 'layout.html' %}
+
+{% block content%}
+<div class="row">
+    <div class="col-3">
+        <img class="img-fluid" src="https://via.placeholder.com/1000X1000&text=Profile Image" alt="Profile Image">
+    </div>
+    <div class="col-9">
+        <form>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-6">
+                        <input type="text"class="form-control" name="first_name" id="first_name" aria-describedby="helpId" placeholder="First Name">
+                    </div>
+                    <div class="col-6">
+                        <input type="text"class="form-control" name="last_name" id="last_name" aria-describedby="helpId" placeholder="Last Name">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" name="email" id="email" aria-describedby="helpId" placeholder="E-mail Address">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" name="password" id="passwprd" aria-describedby="helpId" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <input type="passwprd" class="form-control" name="confirm password" id="confirm password" aria-describedby="helpId" placeholder="Confirm Password">
+            </div>
+            <input type="button" class="btn btn-info btn-block" value="Update"  />
+        </form>
+    </div>
+</div>
+
+<hr />
+
+<div class="row">
+    
+    <div class="col-12">
+        <form>
+            <div class="row">
+                <div class="col-10">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="blog_post" id="blog_post" aria-describedby="helpId" placeholder="Tell Us Your Thoughts">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <button class="btn btn-info btn-block" type="button">
+                    Post    
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<hr />
+<div class="row">
+    <div class="col-12">
+        <ul class="list-group">
+            <li class="list-group-item mb-4">
+                Blog Post Body
+                <div>
+                    <small>
+                    &mdash; Mike Jones
+                    <span class="float-right">
+                        a few seconds ago
+                    </span>
+                </small>
+                </div>
+            </li>
+            <li class="list-group-item mb-4">
+                Blog Post Body
+                <div>
+                    <small>
+                    &mdash; Mike Jones
+                    <span class="float-right">
+                        a few seconds ago
+                    </span>
+                </small>
+                </div>
+            </li>
+            <li class="list-group-item mb-4">
+                Blog Post Body
+                <div>
+                    <small>
+                    &mdash; Mike Jones
+                    <span class="float-right">
+                        a few seconds ago
+                    </span>
+                </small>
+                </div>
+            </li>
+            <li class="list-group-item mb-4">
+                Blog Post Body
+                <div>
+                    <small>
+                    &mdash; Mike Jones
+                    <span class="float-right">
+                        a few seconds ago
+                    </span>
+                </small>
+                </div>
+            </li>
+            <li class="list-group-item mb-4">
+                Blog Post Body
+                <div>
+                    <small>
+                    &mdash; Mike Jones
+                    <span class="float-right">
+                        a few seconds ago
+                    </span>
+                </small>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</div>
+{% endblock content %}
